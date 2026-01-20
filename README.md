@@ -1,61 +1,72 @@
-<u><b>Overview</b></u>
+Note Manager – Python Utility
+Overview
 
-This project is a simple Python-based utility developed to create and manage personal notes efficiently. It supports both a Command Line Interface (CLI) and a basic Graphical User Interface (GUI), allowing users to choose their preferred mode of interaction.
+Note Manager is a lightweight Python-based application designed to help users create, store, and manage personal notes efficiently. The project provides both a Command Line Interface (CLI) and a simple Graphical User Interface (GUI), allowing users to interact with the system in their preferred way.
 
-The project is designed to demonstrate fundamental software development concepts such as problem understanding, clean coding, file handling, and basic user interaction.
+The primary goal of this project is to demonstrate core software development concepts such as problem analysis, clean and modular coding practices, file handling, and basic user interaction using Python’s standard libraries.
 
-<u><b>Problem Statement</b></u>
+Problem Statement
 
-During regular study and work activities, short notes such as ideas, reminders, and tasks are often created quickly and saved without proper structure. Over time, this results in disorganized information that becomes difficult to track or retrieve.
+In daily academic and professional life, users frequently create short notes such as ideas, reminders, and tasks. These notes are often saved without a consistent structure or organization. Over time, this leads to scattered and disorganized information, making retrieval and management difficult.
 
-Manually organizing such notes is inefficient. Therefore, a simple and structured system is required to store notes in an organized and consistent manner.
+Manually organizing such notes is time-consuming and inefficient. Therefore, a simple and structured note management system is required to store and access notes in a reliable and organized manner.
 
-<u><b>Solution Description</b></u>
+Solution Description
 
-This utility allows users to create notes that are automatically saved with a timestamp-based filename. Notes are stored as text files inside a dedicated folder, making them easy to access, read, and manage.
+The Note Manager application provides a straightforward solution by allowing users to create notes that are automatically saved with timestamp-based filenames, ensuring uniqueness and preventing overwriting.
 
-The application provides both a command-line interface and a graphical user interface, ensuring flexibility and ease of use for different users.
+All notes are stored as plain text files inside a dedicated folder, making them easy to access, read, and manage without requiring any external tools. The application supports both CLI and GUI modes to accommodate different user preferences while keeping the design minimal and functional.
 
-<u><b>Features</b></u>
+Features
 
-Create and store notes easily
+Create and save notes quickly
 
 Automatic timestamp-based file naming
 
-View all saved notes through the CLI
+View previously saved notes using the CLI
 
-Supports both CLI and GUI usage
+Supports both Command Line and Graphical interfaces
 
 Uses only Python standard libraries
 
-<u><b>Technology Stack</b></u>
+Lightweight, portable, and easy to run
+
+Technology Stack
 
 Programming Language: Python 3
 
-Libraries Used: os, datetime, tkinter
+Libraries Used:
 
-All libraries used are part of the Python Standard Library, ensuring portability and ease of execution.
+os – for directory and file handling
 
-<u><b>Project Structure</b></u>
+datetime – for timestamp generation
+
+tkinter – for building the graphical interface
+
+All libraries used are part of Python’s standard library, ensuring that the application runs without additional dependencies.
+
+Project Structure
 note-manager/
 │
-├── notes.py        # Command line version
-├── notes_gui.py    # Graphical interface version
-├── notes/          # Automatically created folder for storing notes
-└── README.md
+├── notes.py        # Command Line Interface implementation
+├── notes_gui.py    # Graphical User Interface implementation
+├── notes/          # Folder where all notes are stored
+└── README.md       # Project documentation
 
-<u><b>How to Run the Application</b></u>
-<u><b>Prerequisites</b></u>
+How to Run the Application
+Prerequisites
 
 Python 3 must be installed on the system
 
-You can verify the installation using:
+You can verify the installation by running:
 
 python --version
 
-<u><b>Running the Command Line Version</b></u>
+Running the Command Line Version
 
-Navigate to the project directory and run:
+Navigate to the project directory
+
+Run the following command:
 
 python notes.py
 
@@ -68,23 +79,25 @@ View existing notes
 
 Exit the application
 
-<u><b>Running the Graphical Interface Version</b></u>
+Running the Graphical Interface Version
 
-From the project directory, run:
+Navigate to the project directory
+
+Run the following command:
 
 python notes_gui.py
 
 
-A window will open where notes can be written and saved using the graphical interface.
+A graphical window will open where users can write and save notes using a simple and intuitive interface.
 
-<u><b>Design Decisions</b></u>
+Design Decisions
 
-Python was selected for its simplicity and readability
+Python was chosen for its simplicity, readability, and wide availability
 
-Timestamp-based filenames ensure uniqueness and prevent overwriting
+Timestamp-based filenames ensure unique note storage
 
-Notes are stored as plain text files for transparency and easy access
+Plain text storage improves transparency and accessibility
 
-The GUI is intentionally minimal to focus on core functionality
+The GUI is intentionally minimal to prioritize functionality over complexity
 
-No external libraries are used, keeping the project lightweight and portable
+No external libraries are used to keep the project lightweight and portable
